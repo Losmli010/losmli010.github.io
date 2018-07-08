@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="变量,引用," />
+  <meta name="keywords" content="闭包,装饰器," />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="常量在程序运行过程中，值永远保持不变。例如: 18，3.14，”python”，True。 变量在程序运行过程中，值会动态改变。 123456789&quot;&quot;&quot;变量名 = 初始值注意：Python中变量名一般由字母、数字和下划线组成，但是开头不能是数字。	 变量名不要使用Python中的关键字和内置函数名。&quot;&quot;&quot;age = 18language = &quot;python&quot;b = True 变量和引用内存在存储">
-<meta name="keywords" content="变量,引用">
+<meta name="description" content="函数和变量变量可以指向函数，函数名是一个变量，而函数的形参本身就是一个变量，可以接收实参，那么一个函数就可以接收另一个函数作为参数。 123456#函数名是指向函数的变量,可以被赋值给其他变量，相当于给原函数起一个新名new_name = absresult = new_name(-8)		#8#函数名作为函数的参数map(str, [2, 4, 6, 8]) 闭包在一个外函数中定义一个内函数，并">
+<meta name="keywords" content="闭包,装饰器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="变量和引用">
-<meta property="og:url" content="http://yoursite.com/2018/06/13/变量和引用/index.html">
+<meta property="og:title" content="Python装饰器">
+<meta property="og:url" content="http://yoursite.com/2018/07/08/Python装饰器/index.html">
 <meta property="og:site_name" content="Losmli">
-<meta property="og:description" content="常量在程序运行过程中，值永远保持不变。例如: 18，3.14，”python”，True。 变量在程序运行过程中，值会动态改变。 123456789&quot;&quot;&quot;变量名 = 初始值注意：Python中变量名一般由字母、数字和下划线组成，但是开头不能是数字。	 变量名不要使用Python中的关键字和内置函数名。&quot;&quot;&quot;age = 18language = &quot;python&quot;b = True 变量和引用内存在存储">
+<meta property="og:description" content="函数和变量变量可以指向函数，函数名是一个变量，而函数的形参本身就是一个变量，可以接收实参，那么一个函数就可以接收另一个函数作为参数。 123456#函数名是指向函数的变量,可以被赋值给其他变量，相当于给原函数起一个新名new_name = absresult = new_name(-8)		#8#函数名作为函数的参数map(str, [2, 4, 6, 8]) 闭包在一个外函数中定义一个内函数，并">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-24T11:26:41.678Z">
+<meta property="og:updated_time" content="2018-07-08T15:14:49.001Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="变量和引用">
-<meta name="twitter:description" content="常量在程序运行过程中，值永远保持不变。例如: 18，3.14，”python”，True。 变量在程序运行过程中，值会动态改变。 123456789&quot;&quot;&quot;变量名 = 初始值注意：Python中变量名一般由字母、数字和下划线组成，但是开头不能是数字。	 变量名不要使用Python中的关键字和内置函数名。&quot;&quot;&quot;age = 18language = &quot;python&quot;b = True 变量和引用内存在存储">
+<meta name="twitter:title" content="Python装饰器">
+<meta name="twitter:description" content="函数和变量变量可以指向函数，函数名是一个变量，而函数的形参本身就是一个变量，可以接收实参，那么一个函数就可以接收另一个函数作为参数。 123456#函数名是指向函数的变量,可以被赋值给其他变量，相当于给原函数起一个新名new_name = absresult = new_name(-8)		#8#函数名作为函数的参数map(str, [2, 4, 6, 8]) 闭包在一个外函数中定义一个内函数，并">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/13/变量和引用/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/08/Python装饰器/"/>
 
 
 
 
 
-  <title>变量和引用 | Losmli</title>
+  <title>Python装饰器 | Losmli</title>
   
 
 
@@ -289,7 +289,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/13/变量和引用/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/08/Python装饰器/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Losmli">
@@ -306,7 +306,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">变量和引用</h1>
+          <h1 class="post-title" itemprop="name headline">Python装饰器</h1>
         
 
         <div class="post-meta">
@@ -318,8 +318,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-13T23:47:00+08:00">
-                2018-06-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-08T23:13:10+08:00">
+                2018-07-08
               </time>
             
 
@@ -334,8 +334,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-24T19:26:41+08:00">
-                2018-06-24
+              <time title="更新于" itemprop="dateModified" datetime="2018-07-08T23:14:49+08:00">
+                2018-07-08
               </time>
             
           </span>
@@ -395,12 +395,20 @@
       
 
       
-        <h4 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h4><p>在程序运行过程中，值永远保持不变。例如: 18，3.14，”python”，True。</p>
-<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><p>在程序运行过程中，值会动态改变。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">变量名 = 初始值</span></span><br><span class="line"><span class="string">注意：Python中变量名一般由字母、数字和下划线组成，但是开头不能是数字。</span></span><br><span class="line"><span class="string">	 变量名不要使用Python中的关键字和内置函数名。</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"></span><br><span class="line">age = <span class="number">18</span></span><br><span class="line">language = <span class="string">"python"</span></span><br><span class="line">b = <span class="keyword">True</span></span><br></pre></td></tr></table></figure>
-<h4 id="变量和引用"><a href="#变量和引用" class="headerlink" title="变量和引用"></a>变量和引用</h4><p>内存在存储数据时会给数据分配相应的空间，每个空间都会有一个地址。可以把内存想象成一座居民楼，数据相当于住户，而地址相当于每个住户的门牌号。将数据赋值给变量时，实际上是变量指向数据在内存中的地址，而变量被重新赋值则改变的是变量的指向。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#内置函数id()：返回数据在内存中的地址</span></span><br><span class="line"></span><br><span class="line">num = <span class="number">16</span></span><br><span class="line">print(id(num))		<span class="comment">#1778230848</span></span><br><span class="line"></span><br><span class="line">num = <span class="number">18</span></span><br><span class="line">print(id(num))		<span class="comment">#1778230912</span></span><br></pre></td></tr></table></figure>
-<h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h4><p><a href="https://blog.csdn.net/qq_32907349/article/details/52190796" target="_blank" rel="noopener">Python-copy()与deepcopy()区别</a></p>
+        <h4 id="函数和变量"><a href="#函数和变量" class="headerlink" title="函数和变量"></a>函数和变量</h4><p>变量可以指向函数，函数名是一个变量，而函数的形参本身就是一个变量，可以接收实参，那么一个函数就可以接收另一个函数作为参数。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#函数名是指向函数的变量,可以被赋值给其他变量，相当于给原函数起一个新名</span></span><br><span class="line">new_name = abs</span><br><span class="line">result = new_name(<span class="number">-8</span>)		<span class="comment">#8</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#函数名作为函数的参数</span></span><br><span class="line">map(str, [<span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>])</span><br></pre></td></tr></table></figure>
+<h4 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h4><p>在一个外函数中定义一个内函数，并且外函数的返回内函数，就构成了一个闭包。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">outer</span><span class="params">(func)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">inner</span><span class="params">()</span>:</span></span><br><span class="line">        <span class="keyword">return</span> func()</span><br><span class="line">    <span class="keyword">return</span> inner</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">"do some thing..."</span>)</span><br><span class="line"></span><br><span class="line">f = outer(func)</span><br><span class="line">f()</span><br><span class="line"></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">函数被调用后才会执行</span></span><br><span class="line"><span class="string">outer(func)返回inner函数, inner函数被赋值给变量f, 调用函数f()即执行inner()</span></span><br><span class="line"><span class="string">"""</span></span><br></pre></td></tr></table></figure>
+<h4 id="闭包和装饰器"><a href="#闭包和装饰器" class="headerlink" title="闭包和装饰器"></a>闭包和装饰器</h4><p>闭包可以用来书写装饰器。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">outer</span><span class="params">(func)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">inner</span><span class="params">()</span>:</span></span><br><span class="line">        <span class="keyword">return</span> func()</span><br><span class="line">    <span class="keyword">return</span> inner</span><br><span class="line"></span><br><span class="line"><span class="meta">@outer</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">"do some thing..."</span>)</span><br><span class="line">    </span><br><span class="line">func()</span><br></pre></td></tr></table></figure>
+<h4 id="装饰器"><a href="#装饰器" class="headerlink" title="装饰器"></a>装饰器</h4><p>在不修改原函数的情况下,装饰器可以在原函数调用前或调用后执行功能[装饰器就是给原函数添加功能]。</p>
+<p>decorators are “wrappers”, which means that they let you execute code before and after the function they decorate without modifying the function itself.</p>
+<h5 id="无参数的装饰器"><a href="#无参数的装饰器" class="headerlink" title="无参数的装饰器"></a>无参数的装饰器</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">(func)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">()</span>:</span></span><br><span class="line">        print(<span class="string">"hello, %s"</span> % func.__name__)</span><br><span class="line">        func()</span><br><span class="line">        print(<span class="string">"goodbye, %s"</span> % func.__name__)</span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line"></span><br><span class="line"><span class="meta">@hello</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">foo</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">"i am foo"</span>)</span><br><span class="line"></span><br><span class="line">foo()</span><br><span class="line"><span class="comment">#等价于foo = hello(foo)</span></span><br><span class="line"><span class="comment">#hello()是一个decorator，hello(foo)返回函数wrapper，调用foo()将执行新函数wrapper()</span></span><br><span class="line"><span class="comment">#wrapper()函数内，首先打印，再紧接着调用原始函数func(),再打印</span></span><br></pre></td></tr></table></figure>
+<h5 id="多个装饰器"><a href="#多个装饰器" class="headerlink" title="多个装饰器"></a>多个装饰器</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">(func)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">()</span>:</span></span><br><span class="line">        print(<span class="string">"hello, %s"</span> % func.__name__)</span><br><span class="line">        func()</span><br><span class="line">        print(<span class="string">"goodbye, %s"</span> % func.__name__)</span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line"></span><br><span class="line"><span class="meta">@hello</span></span><br><span class="line"><span class="meta">@hello</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bar</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">"i am bar"</span>)</span><br><span class="line"></span><br><span class="line">bar()</span><br><span class="line"><span class="comment">#等价于bar = hello(hello(bar))</span></span><br><span class="line"><span class="comment">#从上向下执行,但是原函数只执行一次</span></span><br><span class="line"><span class="comment">#可以将hello(bar)作为一个整体func, 先给func添加功能</span></span><br></pre></td></tr></table></figure>
+<h5 id="有参数的装饰器"><a href="#有参数的装饰器" class="headerlink" title="有参数的装饰器"></a>有参数的装饰器</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">log</span><span class="params">(text)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">decorator</span><span class="params">(func)</span>:</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">            print(<span class="string">"%s %s"</span> % (text, func.__name__))</span><br><span class="line">            func(*args, **kwargs)</span><br><span class="line">        <span class="keyword">return</span> wrapper</span><br><span class="line">    <span class="keyword">return</span> decorator</span><br><span class="line"></span><br><span class="line"><span class="meta">@log("hello")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">now</span><span class="params">(a)</span>:</span></span><br><span class="line">    print(<span class="string">"2018-5-26"</span>)</span><br><span class="line">    print(a)</span><br><span class="line"></span><br><span class="line">arg = <span class="string">"Learning python decorator"</span></span><br><span class="line">now(arg)</span><br><span class="line"><span class="comment">#等价于now = log("hello")(now)</span></span><br><span class="line"><span class="comment">#首先执行log("hello")，返回的是decorator函数，再调用返回的decorator函数，参数是now函数，返回值最终是wrapper函数</span></span><br><span class="line"><span class="comment">#wrapper可以接受不定长的参数,*args通过tuple传递参数,**kwargs通过dict传递参数</span></span><br><span class="line"><span class="comment">#wrapper()函数内，首先打印，再紧接着调用原始函数func()</span></span><br></pre></td></tr></table></figure>
+<h5 id="装饰器的修正"><a href="#装饰器的修正" class="headerlink" title="装饰器的修正"></a>装饰器的修正</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> functools</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">logger</span><span class="params">(arg)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">decorator</span><span class="params">(func)</span>:</span></span><br><span class="line"><span class="meta">        @functools.wraps(func)</span></span><br><span class="line">        <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">()</span>:</span></span><br><span class="line">            print(<span class="string">"%s %s"</span> % (arg, func.__name__))</span><br><span class="line">            <span class="keyword">return</span> func()</span><br><span class="line">        <span class="keyword">return</span> wrapper</span><br><span class="line">    <span class="keyword">return</span> decorator</span><br><span class="line"></span><br><span class="line"><span class="meta">@logger("goodbye")</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">today</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">"2018-5-26"</span>)</span><br><span class="line"></span><br><span class="line">today()</span><br><span class="line">print(today.__name__)</span><br><span class="line"><span class="comment">#被装饰过的原函数的函数名会变为wrapper</span></span><br><span class="line"><span class="comment">#@functools.wraps(func)等价于wrapper.__name__ = func.__name__</span></span><br></pre></td></tr></table></figure>
+<h5 id="缓存装饰器"><a href="#缓存装饰器" class="headerlink" title="缓存装饰器"></a>缓存装饰器</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> lru_cache</span><br><span class="line"></span><br><span class="line"><span class="meta">@lru_cache(maxsize=None)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fib</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> n &lt;= <span class="number">2</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> fib(n - <span class="number">1</span>) + fib(n - <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">result = fib(<span class="number">10</span>)</span><br><span class="line">print(result)</span><br><span class="line">print(fib.cache_info())</span><br></pre></td></tr></table></figure>
+<h5 id="单例类装饰器"><a href="#单例类装饰器" class="headerlink" title="单例类装饰器"></a>单例类装饰器</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">singleton</span><span class="params">(cls)</span>:</span></span><br><span class="line">    instances = &#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">wrapper</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> cls <span class="keyword">not</span> <span class="keyword">in</span> instances:</span><br><span class="line">            instances[cls] = cls(*args, **kwargs)</span><br><span class="line">        <span class="keyword">return</span> instances[cls]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line"></span><br><span class="line"><span class="meta">@singleton</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line"></span><br><span class="line">t1 = Test(<span class="string">"Python"</span>)</span><br><span class="line">t2 = Test(<span class="string">"C/C++"</span>)</span><br><span class="line">print(id(t1) == id(t2))</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -447,9 +455,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/变量/" rel="tag"># 变量</a>
+            <a href="/tags/闭包/" rel="tag"># 闭包</a>
           
-            <a href="/tags/引用/" rel="tag"># 引用</a>
+            <a href="/tags/装饰器/" rel="tag"># 装饰器</a>
           
         </div>
       
@@ -462,15 +470,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/07/01/函数/" rel="next" title="函数">
+                <i class="fa fa-chevron-left"></i> 函数
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/18/运算符和if语句以及while和for循环/" rel="prev" title="运算符和if语句以及while和for循环">
-                运算符和if语句以及while和for循环 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -629,7 +637,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#常量"><span class="nav-number">1.</span> <span class="nav-text">常量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#变量"><span class="nav-number">2.</span> <span class="nav-text">变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#变量和引用"><span class="nav-number">3.</span> <span class="nav-text">变量和引用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考资料"><span class="nav-number">4.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#函数和变量"><span class="nav-number">1.</span> <span class="nav-text">函数和变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#闭包"><span class="nav-number">2.</span> <span class="nav-text">闭包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#闭包和装饰器"><span class="nav-number">3.</span> <span class="nav-text">闭包和装饰器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#装饰器"><span class="nav-number">4.</span> <span class="nav-text">装饰器</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#无参数的装饰器"><span class="nav-number">4.1.</span> <span class="nav-text">无参数的装饰器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#多个装饰器"><span class="nav-number">4.2.</span> <span class="nav-text">多个装饰器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#有参数的装饰器"><span class="nav-number">4.3.</span> <span class="nav-text">有参数的装饰器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#装饰器的修正"><span class="nav-number">4.4.</span> <span class="nav-text">装饰器的修正</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#缓存装饰器"><span class="nav-number">4.5.</span> <span class="nav-text">缓存装饰器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#单例类装饰器"><span class="nav-number">4.6.</span> <span class="nav-text">单例类装饰器</span></a></li></ol></li></ol></div>
             
 
           </div>
