@@ -285,6 +285,168 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/18/类和对象/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Losmli">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/hellokitty.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Losmli">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/18/类和对象/" itemprop="url">类和对象</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-18T09:18:01+08:00">
+                2018-08-18
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-08-18T09:20:30+08:00">
+                2018-08-18
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          面向对象思想在人类认知中，会把属性相近的东西归为一类，并且给类命名。比如，鸟类的共同属性是有翅膀。任何一只鸟都在鸟类的原型基础上产生的。有时也会根据这个东西能做什么事情来划分类别。比如，鸟会飞，这样就和鱼的类别区分开了。
+面向对象就是模拟了以上人类认知过程。在Python语言，“东西”称为对象（object），通过类创建，’’东西’’能做的事情称为方法（method），通过在类的内部定义函数来实现。
+类1234567891011121314151617#定义鸟类class Bird(object):    #鸟类的属性    have_wings = True    #鸟类的方法    def
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/18/类和对象/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/05/异常处理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -494,8 +656,8 @@ Python中的常见异常类型有IndexError，NameEr
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-08-08T09:48:06+08:00">
-                2018-08-08
+              <time title="更新于" itemprop="dateModified" datetime="2018-08-12T22:56:33+08:00">
+                2018-08-12
               </time>
             
           </span>
@@ -554,8 +716,8 @@ Python中的常见异常类型有IndexError，NameEr
           
           函数和变量变量可以指向函数，函数名是一个变量。同时，函数的形参本身也是一个变量，可以接收实参，那么一个函数就可以接收另一个函数作为参数。
 123456#函数名是指向函数的变量,可以被赋值给其他变量，相当于给原函数起一个新名new_name = absresult = new_name(-8)		#8#函数名作为函数的参数map(str, [2, 4, 6, 8])
-闭包在一个外函数中定义一个内函数，并且外函数返回内函数，就构成了一个闭包。
-123456789101112131415def outer(func):    def inner():        return func()    
+闭包在一个外函数中定义一个内函数，并且外函数返回内函数。一个函数和它的环境变量合在一起，就构成了一个闭包(closure) 。而环境变量是外函数的临时变量 。
+123456789101112131415def outer(func)
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1443,7 +1605,7 @@ More in
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1465,7 +1627,7 @@ More in
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
