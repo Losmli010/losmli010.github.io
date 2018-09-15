@@ -1,7 +1,7 @@
 ---
 title: 运算符和if语句以及while和for循环
 date: 2018-06-18 13:14:33
-tags: 循环
+tags: [表达式,if语句,循环]
 categories: python
 ---
 
